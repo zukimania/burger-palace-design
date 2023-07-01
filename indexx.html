@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/A social media ad for a burger far apart High qual.jpg" alt="Burger Hut Logo">
+                    <h1>Burger Palace</h1>
+                </div>
+                <ul class="menu-1" id="menu-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#customer reviews">Customer Reviews</a></li>
+                    <li><a href="#reservation">Bookings</a></li>
+                    <li><a href="#gallery">Our Gallery</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleNavbar()">&#9776;</div>
+        </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Delicious Burgers</h1>
+            <p>Experience the ultimate burger satisfaction</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Burger Palace, where we serve the best burgers in town. Our mission is to provide delicious,
+                high-quality burgers made with fresh ingredients and served with a smile.</p>
+            <p>With years of experience in the burger industry, our dedicated team of chefs crafts each burger with passion
+                and precision. We believe in using only the finest ingredients sourced from local suppliers to ensure every
+                bite is full of flavor.</p>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </section>
+
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/im-1.jpeg" alt="Delicious Burger">
+                    <h3>Classic Burger</h3>
+                    <p>A juicy beef patty topped with lettuce, tomato, onion, and our special sauce.</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/im-1.jpeg" alt="Gourmet Burger">
+                    <h3>Gourmet Burger</h3>
+                    <p>Angus beef patty with caramelized onions, gorgonzola cheese, and arugula.</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <!-- Add more menu items here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-reviews" id="customer reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <img src="images/man-sits-desk-with-laptop-smiles-camera.jpg" alt="Customer 1">
+                <h3>John Smith</h3>
+                <p>"The burgers at Burger Hut are simply amazing! The flavors are so rich and the ingredients are fresh.
+                    Highly recommended!"</p>
+            </div>
+            <div class="review">
+                <img src="images/young-african-american-woman-smiling-texting-smart-phone-generated-by-ai.jpg" alt="Customer 2">
+                <h3>Jane Doe</h3>
+                <p>"I'm a vegetarian, and I was delighted to find delicious veggie burger options at Burger Hut. The taste
+                    and texture are fantastic!"</p>
+            </div>
+            <!-- Add more reviews here -->
+        </div>
+    </section>
+
+
+    <section class="locations" id="locations">
+        <div class="container">
+            <h2>Locations</h2>
+            <div class="location">
+                <h3>Burger Hut Downtown</h3>
+                <p>123 Main St, City</p>
+            </div>
+            <div class="location">
+                <h3>Burger Hut Northside</h3>
+                <p>456 Park Ave, City</p>
+            </div>
+            <!-- Add more locations here -->
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="number" name="guests" placeholder="Number of Guests" required>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/dd03e0ca-382d-4976-9ee3-93db36d00f39.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gourmet-sandwich-fresh-ciabatta-bread-with-grilled-meat-vegetables-generated-by-ai.jpg" alt="Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dd03e0ca-382d-4976-9ee3-93db36d00f39.jpeg" alt="Image 3">
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Drop us a message and we'll get back to you as soon as possible.</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Burger Palace. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="script.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
